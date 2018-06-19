@@ -41,6 +41,8 @@ $(document).ready(function() {
 
               // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
               $("#celebrities").prepend(gifDiv);
+
+              //also create button for celebrity search and append too div id celebrityButtons//
             }
 
         }
