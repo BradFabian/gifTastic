@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $("#addCelebrity").on("click", function() {
+      console.log("sumbit pressed")
     var userInput = $(this).attr("");
 
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + userInput + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
