@@ -45,7 +45,7 @@ $(document).ready(function() {
 
               //also create button for celebrity search and append too div id celebrityButtons//
 
-              //make image clickable to move or stop moving//
+              //make gif clickable to move or stop moving//
             }
 
         }
