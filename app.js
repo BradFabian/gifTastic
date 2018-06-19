@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    $("#addCelebrity").on("click", function() {
-      console.log("sumbit pressed")
-    var userInput = $(this).attr("");
+    $("#data-celebrity").on("click", function() {
+      console.log("sumbit pressed");
+    var userInput =  $(this).attr("data-celebrity");
 
     var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + userInput + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
     
@@ -11,10 +11,10 @@ $(document).ready(function() {
         url: queryURL,
         method: "GET"
       }).then(function(response) {
-        console.log(response)
+      
        
         var results = response.data;
-
+        console.log(results)
           // Looping over every result item
           for (var i = 0; i < results.length; i++) {
 
@@ -44,6 +44,8 @@ $(document).ready(function() {
               $("#celebrities").prepend(gifDiv);
 
               //also create button for celebrity search and append too div id celebrityButtons//
+
+              //make image clickable to move or stop moving//
             }
 
         }
