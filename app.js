@@ -1,9 +1,13 @@
 $(document).ready(function() {
+  var userInput = '';
+  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + userInput + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
+
+
     $("#data-celebrity").on("click", function() {
       console.log("sumbit pressed");
-    var userInput =  $(this).attr("data-celebrity");
-
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + userInput + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
+   
+      userInput= $(this).attr("data-celebrity");
+    
     
     //ajax to call the api//
     
