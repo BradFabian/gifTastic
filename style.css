@@ -13,12 +13,16 @@ body {
 #Heading {
     color: aliceblue;
     text-align: center;
-    
+    font-family: 'Monoton', 'cursive';
+    text-shadow: goldenrod 0.1em 0.1em 0.2em;
+    font-size: 25px;
 }
 
 #headingFame {
+    font-family: 'Courgette', 'cursive';
     color: aliceblue;
     text-align: center;
+    text-shadow: goldenrod 0.1em 0.1em 0.2em;
 }
 
 p {
