@@ -75,13 +75,10 @@ $(document).ready(function() {
           //capture input and submit to have gifs and buttons appear//
 
            //user submitfunction//
-    function submitButtonClicked() {
-      var userInput = $('#data-celebrity').val();
-  
-      if (userInput) {
-          $('#celebrityButtons').append("<button type='button' onclick='person(\"" + userInput + "\")' value=' " + userInput + "'> " + userInput + " </button>");
-      }
-  } submitButtonClicked()
+          var inputGif = '';
+          console.log(inputGif)
+
+    
      
 
     
