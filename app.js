@@ -56,7 +56,7 @@ $(document).ready(function() {
        });
 
      }); 
-
+     
 
      $(".gif").on("click", function() {
       // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
@@ -72,6 +72,15 @@ $(document).ready(function() {
         $(this).attr("data-state", "still");
       }
     });
+
+    //user submitfunction//
+   /* function submitButtonClicked() {
+      var userInput = $('#data-celebrity').val();
+  
+      if (userInput) {
+          $('#celebrityButtons').append("<button type='button' onclick='person(\"" + userInput + "\")' value=' " + userInput + "'> " + userInput + " </button>");
+      }
+  } submitButtonClicked()*/
      
 });
 
