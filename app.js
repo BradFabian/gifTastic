@@ -81,7 +81,7 @@ $(document).ready(function() {
           // function to add button//
           $('#data-celebrity').on('click', function() {
             var celebrityGif = $("#celebrityInput").val();
-            var newButton = $("<button/>").addClass( "button").attr('data-person',celebrityGif).html(celebrityGif).css({'margin': '5px'});
+            var newButton = $("<button/>").addClass( "button").attr('data-person',celebrityGif).html(celebrityGif).css({'margin': '1px'});
 
             $("#celebrityButtons").append(newButton);
                 console.log("Work");
