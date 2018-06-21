@@ -25,6 +25,6 @@ body {
     text-shadow: goldenrod 0.1em 0.1em 0.2em;
 }
 
-p {
+p label {
     color: aliceblue;
 }
