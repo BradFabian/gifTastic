@@ -4,7 +4,7 @@ $(document).ready(function() {
       console.log("sumbit pressed");
       
      var person = $(this).attr("data-person");
-      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
+      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
     //ajax to call the api//
     
     $.ajax({
@@ -86,7 +86,7 @@ $(document).ready(function() {
             $("#celebrityButtons").append(newButton);
                 console.log("Work");
 
-                var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + celebrityGif + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
+                var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + celebrityGif + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
 
                 console.log(queryURL);
          
