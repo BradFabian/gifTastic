@@ -1,0 +1,11 @@
+body {
+    background: url("images/walk--terrazzo-tile.jpg")
+    no-repeat;
+    z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+
+#celebrityForm {
+    float: right;
+}
