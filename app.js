@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+  /*var celebritiesNames = ['Clint Eastwood', 'Madonna', 'Danny Devito']
+  console.log(celebritiesNames);
+
+      function buttonGenerator() {
+        $('#celebrityButtons').empty()
+        for ( var i = 0; i < celebritiesNames.length; i++ ) {
+          var button= $('<button>');
+          button.addClass('celebrityButton btn btn-warning');
+          button.append(celebritiesNames[i]);
+          button.attr("data-person", celebritiesNames[i]);
+
+          $('#celebrityButtons').prepend(button);
+        }
+      }
+      buttonGenerator()*/
+
     $("button").on("click", function() {
       console.log("sumbit pressed");
       
@@ -12,7 +28,7 @@ $(document).ready(function() {
         method: "GET"
       }).then(function(response) {
       
-       
+       $('#celebrities').empty();
         var results = response.data;
         console.log(results)
           // Looping over every result item
@@ -79,12 +95,15 @@ $(document).ready(function() {
           console.log(inputGif)
 
           // function to add button//
-          $('#data-celebrity').on('click', function() {
-            var celebrityGif = $("#celebrityInput").val();
-            var newButton = $("<button/>").addClass( "btn btn-warning").attr('data-person',celebrityGif).html(celebrityGif).css({'margin': '1px'});
+          $('#submitCelebrity').on('click', function() {
+            var celebrityGif = $("#celebrityInput").val().trim();
+            newButton = $("<button/>").addClass( "btn btn-warning").attr('data-person',celebrityGif).html(celebrityGif).css({'margin': '1px'});
 
             $("#celebrityButtons").append(newButton);
                 console.log("Work");
+
+               
+
 
                 var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + celebrityGif + "&api_key=Mqi5t09DvIKIDGnmszL6uvWuCml9QX8o&limit=10";
 
@@ -96,7 +115,7 @@ $(document).ready(function() {
             method: "GET"
           }).then(function(response) {
           
-           
+            $('#celebrities').empty();
             var results = response.data;
             console.log(results)
               // Looping over every result item
